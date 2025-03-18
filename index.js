@@ -1,12 +1,5 @@
 //RESUELVE LOS EJERCICIOS AQUI
 
-// console.log("Hello World");
-
-// let arr = [1, 2, 3, 4, 5, 6, 7];
-// let multiplyBy2 = (n) => n * 2;
-
-// console.log(arr);
-
 // Ejercicio 1
 const numbers = [4, 5, 6, 7, 8, 9, 10];
 
@@ -16,23 +9,13 @@ console.log(elevados(numbers));
 // Ejercicio 2
 
 let foodList = ["Pizza", "Ramen", "Paella", "Entrecot"];
-let generarArray = foodList.reduce((frase, frase2, frase3, frase4) => {
-  return `Como soy de Italia, amo comer ${frase}, Como soy de Japon, amo comer${frase2} `;
-});
+let paises = ["Italia", "Japon", "Valencia"];
+const food = (crearArray) =>
+  foodList.map((frase) => `Como soy de ${paises[0]}, amo comer ${[frase]}`);
 
-console.log(generarArray);
-
-// let devolverPalabras = foodList.filter((palabra) => palabra.length >= 6);
-
-// console.log(devolverPalabras);
+console.log(food(foodList));
 
 // Ejercicio 3
-
-// let lista = [2,-1,1,3,5,8];
-// let acumulado = lista.reduce(function(anterior, actual, indice, vector){
-//  return anterior + actual;
-// });
-// console.log(acumulado); // 18
 
 const staff = [
   {
