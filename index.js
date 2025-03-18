@@ -40,6 +40,10 @@ const staff = [
   },
 ];
 
-let formarFrases = staff.map((frase) => frase.name);
+let personas = (devolverPersonas) =>
+  staff.map(
+    (persona) =>
+      `${persona.name} es ${persona.role} y le gusta ${persona.hobbies[0]} y ${persona.hobbies[1]},`
+  );
 
-console.log(formarFrases);
+console.log(personas(staff));
