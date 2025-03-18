@@ -1,8 +1,9 @@
-![logotipo de The Bridge](https://user-images.githubusercontent.com/27650532/77754601-e8365180-702b-11ea-8bed-5bc14a43f869.png  "logotipo de The Bridge")
+![logotipo de The Bridge](https://user-images.githubusercontent.com/27650532/77754601-e8365180-702b-11ea-8bed-5bc14a43f869.png "logotipo de The Bridge")
 
-# :european_castle: :crossed_swords: Bikram #
+# :european_castle: :crossed_swords: Bikram
 
-## Introducción ##
+## Introducción
+
 Un bikram es una combinación de ejercicios de programación para perfeccionar la conexión entre el programador interior que llevas dentro y el alma del lenguaje de programación. Aprovecha los checkboxes en el enunciado para ir marcando que ejercicios llevas realizados.
 
 Estas pruebas cubren un espectro de dificultad incremental, dotada de tests que cubrirán la correcta resolución para ayudarte a encontrar posibles errores en tu código.
@@ -11,15 +12,24 @@ La soluciones a los bikrams deberán hacerse en **./index.js** y tienen que subi
 
 En esta ocasión, el bikram se dividirá en :crossed_swords: Pair Programming :crossed_swords: y :european_castle: proyecto individual :european_castle:
 
-## Iteraciones :crossed_swords: Pair Programming :crossed_swords: ##
+## Iteraciones :crossed_swords: Pair Programming :crossed_swords:
 
 (Abre index.html para ver el resultado de los tests)
 
-### Map ###
+### Map
 
 - [ ] 1.- Dado el array **numbers** cuyo valor sea [4, 5, 6, 7, 8, 9, 10], crea una función **elevados** que devuelva un array con el cuadrado de cada uno de los elementos.
 
+1. Crear array numbers
+2. Crear funcion elevados
+3. return numbers
+4. numero al cuadrado
+
 - [ ] 2.- Dado el array **foodList** con valor ['Pizza', 'Ramen', 'Paella', 'Entrecot'], generar un segundo array que consiga generar de salida el resultado esperado.
+
+1. Crear array foodlist
+2. Generar segundo array (metodo reduce)
+
 ```
 [
     'Como soy de Italia, amo comer Pizza',
@@ -29,7 +39,8 @@ En esta ocasión, el bikram se dividirá en :crossed_swords: Pair Programming :c
 ]
 ```
 
-- [ ] 3.- Dado el  array **staff**, crear un segundo array que forme frases como en el ejemplo accediendo a las propiedades del objeto proporcionado:
+- [ ] 3.- Dado el array **staff**, crear un segundo array que forme frases como en el ejemplo accediendo a las propiedades del objeto proporcionado:
+
 ```
 const staff = [
   {
@@ -66,7 +77,7 @@ const staff = [
 */
 ```
 
-### Filter ###
+### Filter
 
 - [ ] 4.- Crea un segundo array result4 a partir del array numbers2 que devuelva solo los impares
 
@@ -75,6 +86,7 @@ const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 ```
 
 - [ ] 5.- Dado el array foodList2, genera un segundo array result5 que filtre los platos veganos y saque una sentencia como la del ejemplo
+
 ```
 ['Que rico Tempeh me voy a comer!',
 'Que rica Tofu burguer me voy a comer!']
@@ -99,7 +111,6 @@ const foodList2 =[
   isVeggie: false
 }];
 ```
-
 
 - [ ] 6.- Dado el array **inventory**, devolver un array con los nombres de los elementos que valgan más de 300 euros.
 
@@ -132,11 +143,12 @@ const inventory = [
 */
 ```
 
-### Reduce ###
+### Reduce
 
 - [ ] 6.- Dado el siguiente array **numeros** [39, 2, 4, 25, 62], obten la multiplicación de todos los elementos del array
 
 - [ ] 7.- Concatena todos los elementos del array con reduce para que devuelva una sola frase
+
 ```
 const sentenceElements = [
   'Me',
@@ -156,6 +168,7 @@ const sentenceElements = [
 ```
 
 - [ ] 8.- Obtener el monto total de los elementos que pertenecen a catergory "code" en el siguiente array.
+
 ```
 const books = [
   {
@@ -186,4 +199,3 @@ const books = [
 // Resultado --> 60
 
 ```
-
