@@ -41,6 +41,9 @@ En esta ocasión, el bikram se dividirá en :crossed_swords: Pair Programming :c
 
 - [ ] 3.- Dado el array **staff**, crear un segundo array que forme frases como en el ejemplo accediendo a las propiedades del objeto proporcionado:
 
+1. Crear array staff
+2. Generar segundo array (metodo reduce)
+
 ```
 const staff = [
   {
