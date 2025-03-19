@@ -9,11 +9,14 @@ console.log(elevados(numbers));
 // Ejercicio 2
 
 let foodList = ["Pizza", "Ramen", "Paella", "Entrecot"];
-let paises = ["Italia", "Japon", "Valencia"];
-const food = (crearArray) =>
-  foodList.map((frase) => `Como soy de ${paises[0]}, amo comer ${[frase]}`);
+let paises = ["Italia", "Japon", "España", "Francia"]; // Añadí un país más para hacer que coincidan las longitudes
 
-console.log(food(foodList));
+const result2 = () =>
+  foodList.map(
+    (frase, index) => `Como soy de ${paises[index]}, amo comer ${frase}`
+  );
+
+console.log(result2());
 
 // Ejercicio 3
 
@@ -113,3 +116,42 @@ let nombresMasDe300 = (devolverNombres) =>
   inventory.filter((nombre) => nombre.price > 300).map((nombre) => nombre.name);
 
 console.log(nombresMasDe300(inventory));
+
+// Ejercicio 7
+
+let numeros3 = [39, 2, 4, 25, 62];
+let result7 = (multiplicarArray) =>
+  numeros3.reduce((numero, position) => numero * position + numero);
+
+console.log(result7(numeros3));
+
+// Ejercicio 8
+
+const sentenceElements = [
+  "Me",
+  "llamo",
+  ,
+  /* Tu nombre aqui! */ "y",
+  "quiero",
+  "sentir",
+  "la",
+  "fuerza",
+  "con",
+  "javascript",
+];
+
+let formarPalabra = () =>
+  sentenceElements.reduce((acum, elem) => `${acum} ${elem}`);
+
+console.log(formarPalabra(sentenceElements));
+
+// Resultado--> 'Me llamo XX y quiero sentir la fuerza con javascript'
+
+// A fixed point in an array is an element whose value is equal to its index. Given a sorted array of distinct elements, return a fixed point, if one exists. Otherwise, return False.
+// For example, given [-6, 0, 2, 40], you should return 2. Given [1, 5, 7, 8], you should return False.
+
+let sortedArray = [1, 0, 3, 5, 4];
+let returnElement = (returnSortedElement) =>
+  sortedArray.filter((index, position) => index === position);
+
+console.log(returnElement(sortedArray));
