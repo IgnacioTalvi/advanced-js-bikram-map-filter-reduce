@@ -145,6 +145,41 @@ console.log(formarPalabra(sentenceElements));
 
 // Resultado--> 'Me llamo XX y quiero sentir la fuerza con javascript'
 
+// Ejercicio 9
+
+const books = [
+  {
+    name: " JS for dummies",
+    author: "Emily A. Vander Veer",
+    price: 20,
+    category: "code",
+  },
+  {
+    name: "Don Quijote de la Mancha",
+    author: "Cervantes",
+    price: 14,
+    category: "novel",
+  },
+  {
+    name: "Juego de tronos",
+    author: "George R. Martin",
+    price: 32,
+    category: "Fantasy",
+  },
+  {
+    name: "javascript the good parts",
+    author: "Douglas Crockford",
+    price: 40,
+    category: "code",
+  },
+];
+
+const result9 = books
+  .filter((categoria) => categoria.category == "code")
+  .reduce((acc, actual) => acc.price + actual.price, 0);
+
+console.log(result9);
+
 // A fixed point in an array is an element whose value is equal to its index. Given a sorted array of distinct elements, return a fixed point, if one exists. Otherwise, return False.
 // For example, given [-6, 0, 2, 40], you should return 2. Given [1, 5, 7, 8], you should return False.
 
