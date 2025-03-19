@@ -9,13 +9,12 @@ console.log(elevados(numbers));
 // Ejercicio 2
 
 let foodList = ["Pizza", "Ramen", "Paella", "Entrecot"];
-let paises = ["Italia", "Japon", "España", "Francia"]; // Añadí un país más para hacer que coincidan las longitudes
+let paises = ["Italia", "Japon", "Valencia"];
 
 const result2 = () =>
   foodList.map(
     (frase, index) => `Como soy de ${paises[index]}, amo comer ${frase}`
   );
-
 console.log(result2());
 
 // Ejercicio 3
@@ -83,9 +82,6 @@ let result5 = () =>
   foodList2
     .filter((listaComida) => listaComida != listaComida.isVeggie)
     .map((listaComida) => `Que rico ${listaComida.name} me voy a comer!`);
-
-// let result2 = (devolverArray) =>
-//   devolverArray.filter((listaComida) => !listaComida.isVeggie);
 
 console.log(result5(foodList));
 
