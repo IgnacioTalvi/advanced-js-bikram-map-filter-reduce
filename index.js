@@ -54,11 +54,9 @@ console.log(result3(staff));
 // Ejercicio 4
 
 const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let result4 = () => numbers2.filter((numeros) => numeros % 2 === 1);
 
-let result4 = (devolverNumero) =>
-  numbers2.filter((numeros) => numeros % 2 === 1);
-
-console.log(result4(numbers2));
+console.log(result4());
 
 // Ejercicio 5
 
@@ -81,7 +79,7 @@ const foodList2 = [
   },
 ];
 
-let result5 = (devolverArray) =>
+let result5 = () =>
   foodList2
     .filter((listaComida) => listaComida != listaComida.isVeggie)
     .map((listaComida) => `Que rico ${listaComida.name} me voy a comer!`);
@@ -130,8 +128,8 @@ console.log(result7(numeros3));
 const sentenceElements = [
   "Me",
   "llamo",
-  ,
-  /* Tu nombre aqui! */ "y",
+  "Ignacio",
+  "y",
   "quiero",
   "sentir",
   "la",
